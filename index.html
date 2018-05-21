@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Homepage</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link type="text/css" rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/grid.css">
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/carousel.css">
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/feature-carousel.css">
+         <!-- Script for the carousel functionality -->
+         <script type="text/javascript">
+            $(document).ready(function() {
+              var carousel = $("#carousel").featureCarousel({
+              });
+              $("#but_prev").click(function () {
+                carousel.prev();
+              });
+              $("#but_next").click(function () {
+                carousel.next();
+              });
+            });
+          </script>
+    </head>
+    <body>
+      <!-- html code for section white -->
+      <div class="container-fluid">
+        <h1>NEWS</h1>
+      </div>
+     <div class="container">
+       <div class="row">
+        <div class="col">
+            <img src="images/politics.jpg" class="rounded" alt="politics">
+            <h5>POLITICS</h5>
+        </div>
+        <div class="col">
+           <img src="images/sport.jpg" class="rounded" alt="sports">
+           <h5>SPORTS</h5>
+        </div>
+       <div class="col">
+         <img src="images/business.jpg" class="rounded" alt="business">
+         <h5>BUSINESS</h5>        
+      </div>
+  </div>
+</div>
+<div class="container">
+       <div class="row">
+        <div class="col">
+            <img src="images/lifestyle.jpg" class="rounded" alt="lifestyle">
+            <h5>LIFESTYLE</h5>
+        </div>
+      <div class="col">
+        <img src="images/international.jpg" class="rounded" alt="international">
+        <h5>INTERNATIONAL</h5>
+      </div>
+      <div class="col">
+       <img src="images/entertainment.jpg" class="rounded" alt="entertainment">
+       <h5>ENTERTAINMENT</h5>        
+      </div>
+  </div>
+</div>
+
+<!-- html code for my carousel section green-->
+<div class="container">
+    <div class="carousel-container">
+    
+      <div id="carousel">
+        <div class="carousel-feature">
+          <a href="#"><img class="carousel-image" alt="Image Caption" src="images/edit1.jpg"></a>
+        </div>
+        <div class="carousel-feature">
+          <a href="#"><img class="carousel-image" alt="Image Caption" src="images/edit2.jpg"></a>
+        </div>
+        <div class="carousel-feature">
+          <a href="#"><img class="carousel-image" alt="Image Caption" src="images/edit3.jpg"></a>
+        </div>
+        <div class="carousel-feature">
+          <a href="#"><img class="carousel-image" alt="Image Caption" src="images/edit4.jpg"></a>
+        </div>
+        <div class="carousel-feature">
+          <a href="#"><img class="carousel-image" alt="Image Caption" src="images/edit5.jpg"></a>
+        </div>
+      </div>
+    
+      <div id="carousel-left"><img src="images/arrow-left.png" /></div>
+      <div id="carousel-right"><img src="images/arrow-right.png" /></div>
+    </div>   
+  </div>
+   
+  </body>
+</html>
+        <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="node_modules/popper.js/dist/popper.min.js"></script>
+        <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+       
+    </body>
+</html>
