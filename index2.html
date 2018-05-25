@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+    <title>Feature Carousel Demonstration Test</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/feature-carousel.css" charset="utf-8" />
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/carousel.css" charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css">
+     <script src="node_modules/jquery/dist/jquery-1.7.min.js" type="text/javascript" charset="utf-8"></script>
+     <script src="nodes_modules/jquery/dist/query.featureCarousel.js" type="text/javascript" charset="utf-8"></script>
+     <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+     <script type="text/javascript">
+      $(document).ready(function() {
+        var carousel = $("#carousel").featureCarousel({
+        });
+        $("#but_prev").click(function () {
+          carousel.prev();
+        });
+        $("#but_next").click(function () {
+          carousel.next();
+        });
+      });
+    </script>
+
+  </head>
+
+  <body> 
+     
+   <div class="container">
+    <div class="carousel-container">
+    
+      <div id="carousel">
+        <div class="carousel-feature">
+          <a href="#"><img class="carousel-image" alt="Image Caption" src="images/edit1.jpg"></a>
+        </div>
+        <div class="carousel-feature">
+          <a href="#"><img class="carousel-image" alt="Image Caption" src="images/edit2.jpg"></a>
+        </div>
+        <div class="carousel-feature">
+          <a href="#"><img class="carousel-image" alt="Image Caption" src="images/edit3.jpg"></a>
+        </div>
+        <div class="carousel-feature">
+          <a href="#"><img class="carousel-image" alt="Image Caption" src="images/edit4.jpg"></a>
+        </div>
+        <div class="carousel-feature">
+          <a href="#"><img class="carousel-image" alt="Image Caption" src="images/edit5.jpg"></a>
+        </div>
+      </div>
+    
+      <div id="carousel-left"><img src="images/arrow-left.png" /></div>
+      <div id="carousel-right"><img src="images/arrow-right.png" /></div>
+    </div>   
+  </div>
+       
+   <script type="text/javascript" src="node_modules/popper.js/dist/popper.min.js"></script>
+  </body>
+</html>
